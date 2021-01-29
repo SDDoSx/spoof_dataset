@@ -57,10 +57,11 @@ def main():
 	for link in all_links:
 		print('----------------------------------------------------------------------')
 		print('\nDownloading:', link[40:])
-        	os.system('wget ' + link)
-        	print('Downloaded:', link[40:])
-        	print('Unzipping:', link[40:])
-        	os.system('unzip ' + link[40:])
+		os.system('wget ' + link)
+		print('Downloaded:', link[40:])
+		print('Unzipping:', link[40:])
+		os.system('unzip ' + link[40:])
 	
 
-
+if __name__ == '__main__':
+    main()
